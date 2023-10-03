@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    background-image: url(fundo.jpg);
+    display: grid;
+    grid-template-areas: 
+        "cab cab cab"
+        "sec pri pri"
+        "rod rod rod";
+    grid-gap: 5px;
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: auto 1000px auto;
+}
+
+header{
+    grid-area: cab;
+}
+aside{
+    grid-area: sec;
+}
+main{
+    grid-area: pri;
+}
+footer{
+    grid-area: rod;
+}
+
+header, aside, main, footer{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        grid-template-areas: 
+        "secn"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 100px;
+    }
+    section{
+        display: flex;
+    }
+    aside{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    
+}
