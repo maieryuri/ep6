@@ -1,6 +1,5 @@
 body{
     background-color: black;
-    background-image: url(fundo.jpg);
     display: grid;
     grid-template-areas: 
         "cab cab cab"
@@ -13,6 +12,8 @@ body{
 
 header{
     grid-area: cab;
+    justify-content: center;
+    text-align: center;
 }
 aside{
     grid-area: sec;
@@ -47,4 +48,15 @@ header, aside, main, footer{
         display: none;
     }
     
+}
+
+p{
+    white-space: nowrap;
+    margin: 40px;
+    color: black;
+}
+
+img{
+    width: 600px;
+    text-align: center;
 }
