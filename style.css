@@ -3,7 +3,7 @@ body{
     display: grid;
     grid-template-areas: 
         "cab cab cab"
-        "sec pri pri"
+        "pri pri pri"
         "rod rod rod";
     grid-gap: 5px;
     grid-template-columns: 20% auto auto;
@@ -14,9 +14,6 @@ header{
     grid-area: cab;
     justify-content: center;
     text-align: center;
-}
-aside{
-    grid-area: sec;
 }
 main{
     grid-area: pri;
@@ -55,7 +52,7 @@ p{
 }
 
 img{
-    width: 600px;
+    width: 500px;
     border-radius: 20px;
     justify-content: center;
 }
