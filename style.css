@@ -56,3 +56,50 @@ img{
     border-radius: 20px;
     justify-content: center;
 }
+
+/* Segunda Pagina */
+ body{
+    display: grid; 
+    grid-template-areas: 
+        "cabe cabe cabe"
+        "prin prin prin"
+        "roda roda roda";
+        grid-gap: 5px;
+        grid-template-columns: 20% auto auto;
+        grid-template-rows: auto auto auto;
+}
+
+header{
+    grid-area: cabe;
+}
+
+main{
+    grid-area: prin;
+}
+footer{
+    grid-area: roda;
+}
+
+header, aside, main, footer{
+    background-color: rgba(116, 93, 93, 0.7);
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        grid-template-areas: 
+        "cab"
+        "pri"
+        "rod";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    aside{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    
+}
+
