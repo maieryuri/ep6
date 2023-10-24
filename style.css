@@ -48,7 +48,7 @@ header, aside, main, footer{
 p{
     margin: 40px;
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 img{
@@ -81,7 +81,7 @@ footer{
 }
 
 header, aside, main, footer{
-    background-color: rgba(116, 93, 93, 0.7);
+    background-color: rgba(255, 247, 247, 0.7);
 }
 
 @media only screen and (max-width: 480px) {
@@ -103,3 +103,83 @@ header, aside, main, footer{
     
 }
 
+#imagemDinamica {
+    width: 600px;
+    height: 400px;
+}
+
+#alterarImagem {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.pergunta {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #0074e4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #0074e4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#resultado1, #resultado2, #resultado3, #resultado4, #resultado5, #resultado6, #resultado7, #resultado8, #resultado9, #resultado10 {
+    margin-top: 20px;
+}
