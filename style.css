@@ -1,6 +1,7 @@
+/*Primeira pagina*/
 body{
     background-color: black;
-    display: grid;
+    display: grid;/*grid*/
     grid-template-areas: 
         "cab cab cab"
         "pri pri pri"
@@ -12,8 +13,6 @@ body{
 
 header{
     grid-area: cab;
-    justify-content: center;
-    text-align: center;
 }
 main{
     grid-area: pri;
@@ -25,7 +24,7 @@ footer{
 header, aside, main, footer{
     background-color: rgba(255, 255, 255, 0.7);
 }
-
+/*grid responsivo (bem era pra ser)*/
 @media only screen and (max-width: 480px) {
     body{
         grid-template-areas: 
@@ -45,13 +44,13 @@ header, aside, main, footer{
     
 }
 
-p{
+p{/*tamanho,jeito e cor das letras*/
     margin: 40px;
     color: black;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-img{
+img{/*configuraçoes das imagens*/
     width: 500px;
     border-radius: 20px;
     justify-content: center;
@@ -59,7 +58,7 @@ img{
 
 /* Segunda Pagina */
  body{
-    display: grid; 
+    display: grid; /*grid da segunda pagina*/
     grid-template-areas: 
         "cabe cabe cabe"
         "prin prin prin"
@@ -83,7 +82,7 @@ footer{
 header, aside, main, footer{
     background-color: rgba(255, 247, 247, 0.7);
 }
-
+/*grid responsivo da segunda pagina (bem era pra ser)*/
 @media only screen and (max-width: 480px) {
     body{
         grid-template-areas: 
@@ -102,7 +101,7 @@ header, aside, main, footer{
     }
     
 }
-
+/*codigo da imagem dinamica (mudar imagem)*/
 #imagemDinamica {
     width: 600px;
     height: 400px;
@@ -115,7 +114,7 @@ header, aside, main, footer{
     border: none;
     cursor: pointer;
 }
-
+/*inicio da pagina de perguntas*/
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -140,7 +139,7 @@ input {
     margin-top: 5px;
 }
 
-button {
+button { /*configuraçoes do botão da pergunta*/
     background-color: #0074e4;
     color: #fff;
     padding: 10px 20px;
@@ -155,13 +154,11 @@ button {
 
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
 }
 
 form {
     max-width: 500px;
     margin: 0 auto;
-    border: 1px solid #ddd;
     padding: 20px;
     margin-top: 20px;
 }
@@ -171,15 +168,17 @@ label {
     margin-top: 10px;
 }
 
-button {
+button { /*configuraçoes do botão da pergunta*/
     background-color: #0074e4;
     color: #fff;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 20px;
 }
 
 #resultado1, #resultado2, #resultado3, #resultado4, #resultado5, #resultado6, #resultado7, #resultado8, #resultado9, #resultado10 {
     margin-top: 20px;
 }
+/*final da pagina das peruntas*/
