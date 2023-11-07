@@ -1,6 +1,6 @@
 /*Primeira pagina*/
 body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: grid;/*grid*/
     grid-template-areas: 
         "cab cab cab"
@@ -13,14 +13,28 @@ body{
 
 header{
     grid-area: cab;
+    border-radius: 20px;
+    box-shadow: #496d8f;
 }
 main{
     grid-area: pri;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 footer{
     grid-area: rod;
 }
+.box{
+    width: 80%;
+    border-radius: 20%;
+    box-shadow: 5px 5px 5px 5px #496d8f;
+    padding: 50px;
+}
+p{
+    text-align: justify;
 
+}
 header, aside, main, footer{
     background-color: rgba(255, 255, 255, 0.7);
 }
